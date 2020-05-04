@@ -1,0 +1,70 @@
+.games section{
+    background: green;
+    padding: 3%;
+    margin: 5%;
+    height: 20vh;
+    border-radius: 10px;
+    border:4px inset red;
+    border-top: 10px inset black;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    font-size: 4vw;
+}
+.games section img{
+    height: 100%;
+}
+.animals section{
+    background: cyan;
+    width: 25%;
+    float:left;
+    margin-left: 6%;
+    text-align: center;
+    font-size: 20pt;
+}
+.animals section img{
+    width: 100%;
+    height: 200px;
+}
+.animals {
+height:40vh;
+}
+h1 {
+    color:blue;
+    
+}
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    background: url('polotno-tkan-seraya-tekstura.jpg');
+    font-family: 'Courier New';
+}
+header {
+    background: url('free-online-background.jpg');
+    color:greenyellow;
+    padding: 20%;
+    font-size: 5vw;
+    font-family: 'Courier New';
+}
+nav {
+    background:white;
+    padding: 10px;
+}
+main {
+    padding-left: 1%;
+    background: white;
+}
+footer {
+    padding-left: 50%;
+    background: blueviolet;
+}
+
+nav a{
+    background-color: aqua;
+    padding:10px;
+    text-decoration:none;
+    color:red;
+}
+nav a:hover{
+    background-color: indigo;
+
+}
