@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body id="body">
+    <header>
+        Java Script
+    </header>
+    <nav>
+        <a href="index.html">Главная страница</a>
+        <a href="my_form.html">Анкета</a>
+        <a href="">Java Script</a>
+    </nav>
+    <main>
+        <script>
+            alert("Добро пожаловать на страницу");
+            function change_color(color){
+                document.getElementById('body').style.background=color;
+            }
+        </script>
+        <button id="dark" onclick="change_color('black')">Тёмная тема страницы</button>
+        <button id="light" onclick="change_color('snow')">Светлая тема страницы</button>
+    </main>
+    <footer>
+        Сайт создан в 2020 году
+    </footer>
+</body>
+</html>
