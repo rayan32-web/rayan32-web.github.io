@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FireRobots</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+<a href="main.html">О проекте</a>
+<a href="Дневник.html">дневник проекта</a>
+<a href="Достижения.html">наши достижения</a>
+</nav>
+<header>
+    <br>
+    <br>
+    FireRobots
+</header>
+
+<main>
+<h1>Проблемы, которые решает наш проект</h1>
+    <ol class="problem">
+        <li>Пожары в лесу</li>
+        <li>Недостаток воды</li>
+        <li>Труднодоступные места</li>
+    </ol>
+<h1>Цель проекта</h1>
+    <ol class="target">
+        <li>Запрограммировать</li>
+        <li>Доделать робота</li>
+        <li>Закончить с микросхемами</li>
+    </ol>
+<h1>Наша команда</h1>
+    <div class="team">
+        <img src="img/i.png">
+        <br>Хабибуллин <br>Раян
+    </div>
+    <div class="team">
+        <img src="img/i.png">
+        <br>Попадюшкин <br>Севастьян
+    </div>
+    <div class="team">
+        <img src="img/i.png">
+        <br>Насибуллин <br>Амир
+    </div>
+<h1>Наши тренеры</h1>
+    <div class="couch">
+        <img src="img/i.png">
+        <br>Четвергов <br>Александр
+    </div>
+    <div class="couch">
+        <img src="img/i.png">
+        <br>Хабибуллина <br>Юлия
+    </div>
+    <h1>Галерея</h1>
+        <div class="galery">
+            <div class="slide">
+            <img src="img/2.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="img/3.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="img/4.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="img/5.jpg" alt="">
+        </div>
+        </div>
+    <script>
+    let number=0;
+        function show_slides(){
+            var slides=document.getElementsByClassName("slide");
+            for (i=0;i<slides.length;i++){
+                slides[i].style.display="none";
+            }
+            slides[number].style.display="block";
+            number++;
+            if (number>slides.length-1){
+                number=0;
+            }
+            setTimeout(show_slides,2000);
+        }
+        show_slides();
+        </script>
+</main>
+<footer>
+    Свяжитесь с нами
+    <section>телефон:+7(000)000-00-00</section>
+    <section>e-mail:example@gmail.com</section>
+</footer>
+</body>
+</html>

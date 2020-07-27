@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FireRobots</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+<a href="main.html">О проекте</a>
+<a href="Дневник.html">дневник проекта</a>
+<a href="Достижения.html">наши достижения</a>
+</nav>
+<header>
+    <br>
+    <br>
+    FireRobots
+</header>
+<main>
+<h1>Дневник проекта</h1>
+<h1>день 1</h1>
+    <section>
+        <img src="robot.png" style="float:left">
+        Делали робота
+        <div id="txt1">Sed et hendrerit nisl. In a consequat mi. Sed vestibulum tincidunt nulla id mollis. In at convallis lorem, quis hendrerit felis. Etiam ac posuere sem. Nunc ut dignissim ante, vel malesuada risus. Nunc interdum lobortis quam, id fringilla ipsum tincidunt vel. Maecenas sapien nunc, ultricies ut gravida sit amet, tempor vitae nibh.</div>
+        <br>
+        <button onclick="show_info('txt1','btn1')" id="btn1">Показать ещё</button>
+    </section>
+<h1>день 2</h1>
+    <section>
+        <img src="robot.png" style="float:right">
+        соединяли контакты робота
+        <div id="txt2">Nam tincidunt, orci eget cursus egestas, tortor sapien gravida justo, in aliquet nisi eros ut quam. Curabitur fermentum mi arcu, malesuada tincidunt lorem euismod sit amet. Nunc vel pulvinar est. Ut a nisl finibus, sodales libero nec, venenatis justo. Quisque viverra in metus in cursus. Proin malesuada sodales facilisis. Pellentesque vel semper mi. Ut sed nisl sit amet velit varius ultrices scelerisque nec dui. Phasellus et ex ac odio ultricies facilisis ut eget quam. Nam vitae lorem nisl. Sed porttitor ipsum elit, id tempor libero convallis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris auctor, metus eu elementum cursus, justo</div>
+        <br>
+        <button onclick="show_info('txt2','btn2')" id="btn2">Показать ещё</button>
+    </section>
+<h1>день 3</h1>
+    <section>
+        <img src="robot.png" style="float:left">
+        прогромировали на VNC ViEWER
+        <div id="txt3">Nam tincidunt, orci eget cursus egestas, tortor sapien gravida justo, in aliquet nisi eros ut quam. Curabitur fermentum mi arcu, malesuada tincidunt lorem euismod sit amet. Nunc vel pulvinar est. Ut a nisl finibus, sodales libero nec, venenatis justo. Quisque viverra in metus in cursus. Proin malesuada sodales facilisis. Pellentesque vel semper mi. Ut sed nisl sit amet velit varius ultrices scelerisque nec dui. Phasellus et ex ac odio ultricies facilisis ut eget quam. Nam vitae lorem nisl. Sed porttitor ipsum elit, id tempor libero convallis non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris auctor, metus eu elementum cursus, justo</div>
+        <br>
+        <button onclick="show_info('txt3','btn3')" id="btn3">Показать ещё</button>
+    </section>
+<script>
+    txt1=document.getElementById("txt1")
+    txt1.style.display="none"
+    txt1=document.getElementById("txt2")
+    txt1.style.display="none"
+    txt1=document.getElementById("txt3")
+    txt1.style.display="none"
+    function show_info(txt,btn){
+        txt1=document.getElementById(txt)
+        txt1.style.display="block"
+        btn1=document.getElementById(btn)
+        btn1.style.display="none"
+    }
+</script>
+</main>
+<footer>
+    Свяжитесь с нами
+    <section>телефон:+7(000)000-00-00</section>
+    <section>e-mail:example@gmail.com</section>
+</footer>
+</body>
+</html>
