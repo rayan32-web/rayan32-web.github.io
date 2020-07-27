@@ -198,11 +198,6 @@ font-family: 'Rubik Mono One', sans-serif;
   margin: 0;
   list-style: none;
   display: inline-block;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   margin: auto;
   height: 90px;
   text-align: center;
@@ -223,6 +218,7 @@ font-family: 'Rubik Mono One', sans-serif;
   transform-origin: left;
   transform: rotateY(-30deg);
   text-shadow: 10px 0px 1px #131313, 10px 0px 1px #070707, 10px 0px 1px black, 10px 0px 1px black;
+
 }
 .socialIcons li a:hover {
   color: #202020;
