@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Раян Хабибуллин</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body onload="timer()">
+
+    <header>
+        Моя первая страница
+    </header>
+    <nav>
+        <a href="">Главная страница</a>
+        <a href="my_form.html">Анкета</a>
+        <a href="interactive.html">Java Script</a>
+    </nav>
+    <main>
+    <h1>Имя</h1>
+        <i>Раян</i>
+    <h1>Возраст</h1>
+    <b>11</b> 
+    <h1>Хобби</h1>
+    <ins>программирование</ins>
+    <h1>Мои любимые игры</h1>
+    <div class="games">
+    <section>
+        <img src="1447176996_photo.jpg" alt="">
+        Minecraft
+    </section>
+    <section>
+        <img src="paul-chambers-logo-new.jpg" alt="">
+        BrawlStars
+    </section>
+    <section>
+        <img src="af73b0668b5b6354a27da47b4e240300.jpg" alt="">
+        WarFace
+    </section>
+    </div>
+    <h1>Мои любимые животные</h1>
+    <div class="animals">
+        <section>
+            <img src="Ruchnye-homyachki.jpg" alt="">
+            хомяк.
+            <br>хомяк живёт 2 года.
+        </section>
+        <section>
+            <img src="cat.jpg" alt="">
+            кошка.
+            <br>коты живут 10-15 лет.
+        </section>
+        <section>
+            <img src="puggy.jpg" alt="">
+            собака.
+            <br>собаки живут 12 лет.
+        </section>
+    </div>
+    <h1>Состав моей семьи</h1>
+    <table align="center" bgcolor="orange" border="10" bordercolor="green">
+        <tr>
+            <th>кем явлеятся для меня</th>
+            <th>имя</th>
+            <th>возраст</th>
+        </tr>
+        <tr>
+            <td>МАМА</td>
+            <td>Лилия</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>ПАПА</td>
+            <td>Ренар</td>
+            <td>43</td>
+        </tr>
+        <tr>
+            <td>СЕСТРА</td>
+            <td>Ралина</td>
+            <td>16</td>
+        </tr>
+    </table>
+        <h1>Галерея</h1>
+        <div class="galery">
+            <div class="slide">
+            <img src="1.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="2.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="3.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="4.jpg" alt="">
+        </div>
+            <div class="slide">
+            <img src="5.jpg" alt="">
+        </div>
+        </div>
+        <script>
+        let number=0;
+        function show_slides(){
+            var slides=document.getElementsByClassName("slide");
+            for (i=0;i<slides.length;i++){
+                slides[i].style.display="none";
+            }
+            slides[number].style.display="block";
+            number++;
+            if (number>slides.length-1){
+                number=0;
+            }
+            setTimeout(show_slides,2000);
+        }
+        show_slides();
+        function showDate(){
+            new_date=new Date()
+            new_text=document.getElementById('txt')
+            new_year=new_date.getFullYear()
+            month=["Январь","Февраль","Март","Апрель","Май","Июнь","Июль","Август","Сентябрь","Октябрь","Ноябрь","Декабрь"]
+            new_day=new_date.getDate()
+            new_hour=new_date.getHours()
+            new_minute=new_date.getMinutes()
+            new_second=new_date.getSeconds()
+            n=new_date.getMonth()
+            new_month=month[n]
+            new_text.innerHTML ="Год: " + new_year+ " Месяц: " + new_month + " День " + new_day + " Часы" + new_hour + " Минуты" + new_minute + " Секунды" + new_second
+        }
+
+        function timer(){
+            new_date=new Date();
+            new_text=document.getElementById('timer');
+            new_hour=new_date.getHours();
+            new_minute=new_date.getMinutes();
+            new_second=new_date.getSeconds();
+            new_text.innerHTML =new_hour+":"+new_minute+":"+new_second;
+            setTimeout(timer,1);
+        }
+        function check_str(){
+            s="Hello world"
+            d=s.length
+            f=s[0]
+            t=s[d-1]
+            sub=s.substring(3,8)
+            new_text=document.getElementById('txt2')
+            new_text.innerHTML = "Количества"+d+" Певвый символ "+f+" Последний символ "+t+" Часть строки "+sub
+
+        }
+        timer();
+        </script>
+        <h1>Краткий обзор сайта:</h1>
+        Главная страница содержит информация обо мне
+        <iframe src="index.html" width="100%" height="300px"></iframe>
+        Страница "Анкета" содержит анкету пользователя
+        <br>
+        <a href="my_form.html">заполнить анкету</a>
+        <iframe src="my_form.html" width="100%" height="300px"></iframe>
+        <h1>Мои любимые видео</h1>
+        <iframe src="https://www.youtube.com/embed/d7l3-MGSY2k" width="100%" frameborder="0" height="300px"></iframe>
+        <iframe src="https://goo.gl/maps/iqYe6xUf2ufoMBVC9"> </iframe>
+        В Турции много курортных зон.
+        <h1>Дата и время</h1>
+        <button onclick="showDate()">Узнать дату и время</button>
+        <div id="txt">Здесь появится дата и время</div>
+        <div id="timer"></div>
+        <h1>Работа со строками</h1>
+        <button onclick="check_str()">Узнать информацию о строке</button>Hello world
+        <div id="txt2"></div>
+    </main>
+    <footer>
+        Сайт создан в 2020 году 
+    </footer>
+    </body>
+    </html>
+
